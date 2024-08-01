@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Semibold;
+}
+.second-div:hover .second-div-p{
+    display: block;
+}
+
+footer{
+    background: linear-gradient(180deg, #161723 0%, #161723 109.24%);
+}
+
+@font-face {
+    font-family: Roboto-Semibold;
+    src: url(./assets/fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: Bold;
+    src: url(./assets/fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: Medium;
+    src: url(./assets/fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: Semibold;
+    src: url(./assets/fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+    font-family: Extrabold;
+    src: url(./assets/fonts/Raleway-ExtraBold.ttf);
+}

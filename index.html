@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOMIKTUT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header class="absolute w-full top-[42px] z-50">
+      <div class="max-w-[1840px] mx-auto px-5">
+        <nav class="flex items-center text-white">
+          <img src="./assets/icons/logo.svg" alt="" />
+          <div
+            class="flex items-center gap-[6.80px] ml-[42.81px] mr-[25.6px] text-[18px]"
+          >
+            <img src="./assets/icons/location.svg" alt="" />
+            <p>Казань</p>
+            <img src="./assets/icons/down.svg" alt="" />
+          </div>
+          <button
+            class="w-[136px] rounded-[200px] h-10 border-[1px] border-white text-[18px]"
+          >
+            Каталог
+          </button>
+          <ul
+            class="flex items-center gap-[30px] ml-[201px] mr-[186.17px] text-[18px]"
+          >
+            <li>
+              <a href="">Частые вопросы</a>
+            </li>
+            <li>
+              <a href="">Сотрудничество</a>
+            </li>
+          </ul>
+          <img src="./assets/icons/like.svg" alt="" />
+          <div class="flex items-center gap-2 ml-[30px]">
+            <img src="./assets/icons/search.svg" alt="" />
+            <input
+              class="outline-0 border-0 bg-transparent placeholder:text-white w-[191px]"
+              type="text"
+              placeholder="Поиск по названию"
+            />
+          </div>
+          <div class="relative flex gap-[7px] ml-[29px]">
+            <img src="./assets/icons/phone.svg" alt="" />
+            <a href="tel:8 (843) 528-65-48">8 (843) 528-65-48</a>
+            <p
+              class="absolute font-[Roboto-Semibold] text-[12px] text-[#7B7B7B] top-[44px] right-0"
+            >
+              Показать / скрыть шапку
+            </p>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section
+        class="bg-[url('assets/images/bg.jpg')] h-[949px] bg-no-repeat bg-center"
+      >
+        <div class="max-w-[1440px] mx-auto px-5">
+          <div class="text-white flex gap-[280px] pt-[200px]">
+            <div>
+              <h2
+                class="font-[Extrabold] text-[60px] w-[680px] leading-[140%] tracking-[1.2px]"
+              >
+                Аренда коттеджей и домов в Казани
+              </h2>
+              <p class="w-[469px] text-[25px] mt-[30px]">
+                Найдите идеальный вариант сами или предоставьте это нам
+              </p>
+              <div
+                class="relative flex gap-[40px] mt-[91px] mb-[80.32px] text-center text-[18px]"
+              >
+                <img
+                  class="absolute top-[42.09px] left-[-39.86px] rotate-[180deg]"
+                  src="./assets/icons/arrow.svg"
+                  alt=""
+                />
+                <img
+                  class="absolute top-[42.09px] right-[80.14px]"
+                  src="./assets/icons/arrow.svg"
+                  alt=""
+                />
+                <div class="flex flex-col gap-[14px]">
+                  <img src="./assets/images/sbasseynom.png" alt="" />
+                  <p>С бассейном</p>
+                </div>
+                <div class="flex flex-col gap-[14px]">
+                  <img src="./assets/images/semeyniye.png" alt="" />
+                  <p class="w-[159px]">Семейные и уютные</p>
+                </div>
+                <div class="flex flex-col gap-[14px]">
+                  <img src="./assets/images/xitiprodaj.png" alt="" />
+                  <p>Хиты продаж</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-[22.49px]">
+                <img src="./assets/icons/youtube.svg" alt="" />
+                <img src="./assets/icons/instagram.svg" alt="" />
+                <img src="./assets/icons/vk.svg" alt="" />
+                <img src="./assets/icons/whatsapp.svg" alt="" />
+                <img src="./assets/icons/telegram.svg" alt="" />
+              </div>
+            </div>
+            <div
+              class="w-[360px] h-[497px] bg-white rounded-[20px] px-[40px] py-[58px]"
+            >
+              <div>
+                <div class="flex gap-[82px] mb-[6px]">
+                  <label class="ml-[20px] text-[#444444]" for="ot">Въезд</label>
+                  <label class="text-[#444444]" for="do">Отъезд</label>
+                </div>
+                <div
+                  class="w-full h-[50px] px-5 border-[1px] border-[#C0C2D7] rounded-full flex items-center"
+                >
+                  <div class="flex items-center gap-[5px]">
+                    <p class="text-[#C0C2D7]">От</p>
+                    <input
+                      id="ot"
+                      class="w-[80px] outline-0 text-[#444444]"
+                      type="text"
+                    />
+                  </div>
+                  <div class="w-[1px] h-[36px] bg-[#C0C2D7] ml-[7px]"></div>
+                  <div class="flex items-center gap-[5px] ml-[20px]">
+                    <p class="text-[#C0C2D7]">До</p>
+                    <input
+                      id="do"
+                      class="w-[75px] outline-0 text-[#444444]"
+                      type="text"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="mt-[26px]">
+                <label for="onikki" class="text-[#444444] ml-5"
+                  >Количество человек</label
+                >
+                <input
+                  id="onikki"
+                  class="w-full h-[50px] px-5 border-[1px] border-[#C0C2D7] rounded-full outline-0 text-[#444444] mt-[6px]"
+                  type="text"
+                  placeholder="12"
+                />
+              </div>
+              <div class="text-[#444444] relative flex mt-[48px] mb-[44px]">
+                <div
+                  class="w-[240px] mx-auto h-[1px] bg-[#808080] absolute top-[11px] left-[20px]"
+                ></div>
+                <div
+                  class="flex flex-col items-center ml-[36px] mr-[112px] relative z-2"
+                >
+                  <span
+                    class="block w-2 h-[23px] bg-[#F4683F] rounded-full"
+                  ></span>
+                  <p>13 000 ₽</p>
+                </div>
+                <div class="flex flex-col items-center mr-[-17px] relative z-2">
+                  <span
+                    class="block w-2 h-[23px] bg-[#F4683F] rounded-full"
+                  ></span>
+                  <p>150 000 ₽</p>
+                </div>
+              </div>
+              <button
+                class="bg-[#F4683F] text-[18px] w-full h-[50px] rounded-[200px]"
+              >
+                Найти
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="h-[1040px] bg-[url(./assets/images/section2bgimg.svg)] w-full h-[1040px] bg-no-repeat bg-center bg-right"
+      >
+        <div class="max-w-[1440px] mx-auto px-5">
+          <div class="pt-[333px]">
+            <div>
+              <h2 class="font-[Extrabold] text-[40px] text-[#333333]">О нас</h2>
+            </div>
+            <div class="flex items-start justify-between">
+              <div>
+                <img
+                  class="mt-[73px] mb-[20px]"
+                  src="./assets/icons/rabotaem.svg"
+                  alt=""
+                />
+                <p class="w-[340px] [Semibold] text-[16px] text-[#333333]">
+                  Работаем с юридическими и физическими лицами
+                </p>
+              </div>
+              <div class="w-[269px]">
+                <img
+                  class="mt-[73px] mb-[20px]"
+                  src="./assets/icons/besplatniy.svg"
+                  alt=""
+                />
+                <p class="w-[240px][Semibold] text-[16px] text-[#333333]">
+                  Бесплатный подбор, честные консультации и открытость
+                  к сотрудничеству
+                </p>
+              </div>
+              <div class="w-[331px]">
+                <img
+                  class="mt-[73px] mb-[20px]"
+                  src="./assets/icons/chelovek.svg"
+                  alt=""
+                />
+                <p class="w-[240px][Semibold] text-[16px] text-[#333333]">
+                  Работаем с 2014 года. Консультируем 30-80 человек в сутки,
+                  заселяем от 3 до 5 компаний в день. Помогли более 21 000
+                  клиентам
+                </p>
+              </div>
+              <div class="w-[323px]">
+                <img
+                  class="mt-[73px] mb-[20px]"
+                  src="./assets/icons/sredniy.svg"
+                  alt=""
+                />
+                <p class="w-[240px][Semibold] text-[16px] text-[#333333]">
+                  Средний рейтинг компании 4,5 из 5 (Avito, Google, Отзовик)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-[#E5E5E5]">
+        <div class="max-w-[1440px] mx-auto px-5">
+          <h2 class="font-[Extrabold] text-[40px] text-[#333333]">
+            Популярное в каталоге
+          </h2>
+          <div class="flex flex-wrap gap-[40px] mt-[80px]">
+            <div
+              class="w-[440px] h-[600px] bg-white border-2 rounded-[25px] relative"
+            >
+              <div
+                class="w-[92px] h-[36px] bg-white rounded-full flex items-center absolute top-[24px] right-[20px]"
+              >
+                <img
+                  class="pl-[16.33px] pr-[9.33px]"
+                  src="./assets/icons/do-30.svg"
+                  alt=""
+                />
+                <p class="font-[Semibold] text-[14px] text-[#727488]">до 30</p>
+              </div>
+              <div
+                class="w-[50px] flex items-center justify-center h-[50px] absolute right-[20px] top-[228px] backdrop-contrast-125 bg-white/50 rounded-full"
+              >
+                <img class="" src="./assets/icons/like2.svg" alt="" />
+              </div>
+              <img src="./assets/images/novaya.svg" alt="" />
+              <h3
+                class="pt-[30px] pb-[16px] pl-[30px] font-[Extrabold] text-[24px]"
+              >
+                Новая сосновка
+              </h3>
+              <div class="flex items-center gap-[12px] pl-[30px]">
+                <img
+                  class="w-[23px] h-[17px]"
+                  src="./assets/icons/spalnix-mect.svg"
+                  alt=""
+                />
+                <p class="font-[Semibold] text-[16px] text-[#727488]">
+                  5 спальных мест
+                </p>
+              </div>
+              <div
+                class="flex items-center gap-[12px] pl-[30px] pt-[8px] pb-[7px]"
+              >
+                <img
+                  class="w-[23px] h-[17px] relative"
+                  src="./assets/icons/nastolniy.svg"
+                  alt=""
+                />
+                <p class="font-[Semibold] text-[16px] text-[#727488]">
+                  Настольный теннис
+                </p>
+              </div>
+              <div class="flex items-center gap-[12px] pl-[30px]">
+                <img
+                  class="w-[23px] h-[17px]"
+                  src="./assets/icons/banya.svg"
+                  alt=""
+                />
+                <p class="font-[Semibold] text-[16px] text-[#727488]">Баня</p>
+              </div>
+              <div class="flex items-center gap-[12px] pl-[30px] pt-[8px]">
+                <img
+                  class="w-[23px] h-[17px]"
+                  src="./assets/icons/basseyn.svg"
+                  alt=""
+                />
+                <p class="font-[Semibold] text-[16px] text-[#727488]">
+                  Бассейн
+                </p>
+              </div>
+              <div class="pl-[30px] flex items-center gap-[66px] mt-[27px]">
+                <h4 class="font-[Extrabold] text-[22px] text-[#333333]">
+                  от 10 000 ₽ / сутки
+                </h4>
+                <div class="">
+                  <span class="font-[Semibold] text-[16px] text-[#F4683F]"
+                    >Подробнее</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[440px] h-[600px] bg-white border-2 rounded-[25px] relative"
+            >
+              <div
+                class="w-[92px] h-[36px] bg-white rounded-full flex items-center absolute top-[24px] right-[20px]"
+              >
+                <img
+                  class="pl-[16.33px] pr-[9.33px]"
+                  src="./assets/icons/do-30.svg"
+                  alt=""
+                />
+                <p class="font-[Semibold] text-[14px] text-[#727488]">до 9</p>
+              </div>
+              <div
+                class="w-[50px] flex items-center justify-center h-[50px] absolute right-[20px] top-[228px] backdrop-contrast-125 bg-white/50 rounded-full"
+              >
+                <img class="" src="./assets/icons/like2.svg" alt="" />
+              </div>
+              <img src="./assets/images/salmachi.svg" alt="" />
+              <h3
+                class="pt-[30px] pb-[16px] pl-[30px] font-[Extrabold] text-[24px]"
+              >
+                Салмачи 1
+              </h3>
+              <div class="flex items-center gap-[12px] pl-[30px]">
+                <img
+                  class="w-[23px] h-[17px]"
+                  src="./assets/icons/spalnix-mect.svg"
+                  alt=""
+                />
+                <p class="font-[Semibold] text-[16px] text-[#727488]">
+                  5 спальных мест
+                </p>
+              </div>
+              <div
+                class="flex items-center gap-[12px] pl-[30px] pt-[8px] pb-[7px]"
+              >
+                <img
+                  class="w-[23px] h-[17px] relative"
+                  src="./assets/icons/nastolniy.svg"
+                  alt=""
+                />
+                <p class="font-[Semibold] text-[16px] text-[#727488]">
+                  Настольный теннис
+                </p>
+              </div>
+              <div class="flex items-center gap-[12px] pl-[30px]">
+                <img
+                  class="w-[23px] h-[17px]"
+                  src="./assets/icons/banya.svg"
+                  alt=""
+                />
+                <p class="font-[Semibold] text-[16px] text-[#727488]">Баня</p>
+              </div>
+              <div class="flex items-center gap-[12px] pl-[30px] pt-[8px]">
+                <img
+                  class="w-[23px] h-[17px]"
+                  src="./assets/icons/basseyn.svg"
+                  alt=""
+                />
+                <p class="font-[Semibold] text-[16px] text-[#727488]">
+                  Бассейн
+                </p>
+              </div>
+              <div class="pl-[30px] flex items-center gap-[66px] mt-[27px]">
+                <h4 class="font-[Extrabold] text-[22px] text-[#333333]">
+                  от 10 000 ₽ / сутки
+                </h4>
+                <div class="">
+                  <span class="font-[Semibold] text-[16px] text-[#F4683F]"
+                    >Подробнее</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[440px] h-[600px] bg-white border-2 rounded-[25px] relative"
+            >
+              <div
+                class="w-[92px] h-[36px] bg-white rounded-full flex items-center absolute top-[24px] right-[20px]"
+              >
+                <img
+                  class="pl-[16.33px] pr-[9.33px]"
+                  src="./assets/icons/do-30.svg"
+                  alt=""
+                />
+                <p class="font-[Semibold] text-[14px] text-[#727488]">до 30</p>
+              </div>
+              <div
+                class="w-[50px] flex items-center justify-center h-[50px] absolute right-[20px] top-[228px] backdrop-contrast-125 bg-white/50 rounded-full"
+              >
+                <img class="" src="./assets/icons/like2.svg" alt="" />
+              </div>
+              <img src="./assets/images/novaya2.svg" alt="" />
+              <h3
+                class="pt-[30px] pb-[16px] pl-[30px] font-[Extrabold] text-[24px]"
+              >
+                Новая сосновка
+              </h3>
+              <div class="flex items-center gap-[12px] pl-[30px]">
+                <img
+                  class="w-[23px] h-[17px]"
+                  src="./assets/icons/spalnix-mect.svg"
+                  alt=""
+                />
+                <p class="font-[Semibold] text-[16px] text-[#727488]">
+                  5 спальных мест
+                </p>
+              </div>
+              <div
+                class="flex items-center gap-[12px] pl-[30px] pt-[8px] pb-[7px]"
+              >
+                <img
+                  class="w-[23px] h-[17px] relative"
+                  src="./assets/icons/nastolniy.svg"
+                  alt=""
+                />
+                <p class="font-[Semibold] text-[16px] text-[#727488]">
+                  Настольный теннис
+                </p>
+              </div>
+              <div class="flex items-center gap-[12px] pl-[30px]">
+                <img
+                  class="w-[23px] h-[17px]"
+                  src="./assets/icons/banya.svg"
+                  alt=""
+                />
+                <p class="font-[Semibold] text-[16px] text-[#727488]">Баня</p>
+              </div>
+              <div class="flex items-center gap-[12px] pl-[30px] pt-[8px]">
+                <img
+                  class="w-[23px] h-[17px]"
+                  src="./assets/icons/basseyn.svg"
+                  alt=""
+                />
+                <p class="font-[Semibold] text-[16px] text-[#727488]">
+                  Бассейн
+                </p>
+              </div>
+              <div class="pl-[30px] flex items-center gap-[66px] mt-[27px]">
+                <h4 class="font-[Extrabold] text-[22px] text-[#333333]">
+                  от 12 000 ₽ / сутки
+                </h4>
+                <div class="">
+                  <span class="font-[Semibold] text-[16px] text-[#F4683F]"
+                    >Подробнее</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[440px] h-[600px] bg-white border-2 rounded-[25px] relative"
+            >
+              <div
+                class="w-[92px] h-[36px] bg-white rounded-full flex items-center absolute top-[24px] right-[20px]"
+              >
+                <img
+                  class="pl-[16.33px] pr-[9.33px]"
+                  src="./assets/icons/do-30.svg"
+                  alt=""
+                />
+                <p class="font-[Semibold] text-[14px] text-[#727488]">до 30</p>
+              </div>
+              <div
+                class="w-[50px] flex items-center justify-center h-[50px] absolute right-[20px] top-[228px] backdrop-contrast-125 bg-white/50 rounded-full"
+              >
+                <img class="" src="./assets/icons/like2.svg" alt="" />
+              </div>
+              <img src="./assets/images/novaya3.svg" alt="" />
+              <h3
+                class="pt-[30px] pb-[16px] pl-[30px] font-[Extrabold] text-[24px]"
+              >
+                Новая сосновка
+              </h3>
+              <div class="flex items-center gap-[12px] pl-[30px]">
+                <img
+                  class="w-[23px] h-[17px]"
+                  src="./assets/icons/spalnix-mect.svg"
+                  alt=""
+                />
+                <p class="font-[Semibold] text-[16px] text-[#727488]">
+                  5 спальных мест
+                </p>
+              </div>
+              <div
+                class="flex items-center gap-[12px] pl-[30px] pt-[8px] pb-[7px]"
+              >
+                <img
+                  class="w-[23px] h-[17px] relative"
+                  src="./assets/icons/nastolniy.svg"
+                  alt=""
+                />
+                <p class="font-[Semibold] text-[16px] text-[#727488]">
+                  Настольный теннис
+                </p>
+              </div>
+              <div class="flex items-center gap-[12px] pl-[30px]">
+                <img
+                  class="w-[23px] h-[17px]"
+                  src="./assets/icons/banya.svg"
+                  alt=""
+                />
+                <p class="font-[Semibold] text-[16px] text-[#727488]">Баня</p>
+              </div>
+              <div class="flex items-center gap-[12px] pl-[30px] pt-[8px]">
+                <img
+                  class="w-[23px] h-[17px]"
+                  src="./assets/icons/basseyn.svg"
+                  alt=""
+                />
+                <p class="font-[Semibold] text-[16px] text-[#727488]">
+                  Бассейн
+                </p>
+              </div>
+              <div class="pl-[30px] flex items-center gap-[66px] mt-[27px]">
+                <h4 class="font-[Extrabold] text-[22px] text-[#333333]">
+                  от 10 000 ₽ / сутки
+                </h4>
+                <div class="">
+                  <span class="font-[Semibold] text-[16px] text-[#F4683F]"
+                    >Подробнее</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[440px] h-[600px] bg-white border-2 rounded-[25px] relative"
+            >
+              <div
+                class="w-[92px] h-[36px] bg-white rounded-full flex items-center absolute top-[24px] right-[20px]"
+              >
+                <img
+                  class="pl-[16.33px] pr-[9.33px]"
+                  src="./assets/icons/do-30.svg"
+                  alt=""
+                />
+                <p class="font-[Semibold] text-[14px] text-[#727488]">до 14</p>
+              </div>
+              <div
+                class="w-[50px] flex items-center justify-center h-[50px] absolute right-[20px] top-[228px] backdrop-contrast-125 bg-white/50 rounded-full"
+              >
+                <img class="" src="./assets/icons/like2.svg" alt="" />
+              </div>
+              <img src="./assets/images/novaya4.svg" alt="" />
+              <h3
+                class="pt-[30px] pb-[16px] pl-[30px] font-[Extrabold] text-[24px]"
+              >
+                Новая сосновка
+              </h3>
+              <div class="flex items-center gap-[12px] pl-[30px]">
+                <img
+                  class="w-[23px] h-[17px]"
+                  src="./assets/icons/spalnix-mect.svg"
+                  alt=""
+                />
+                <p class="font-[Semibold] text-[16px] text-[#727488]">
+                  5 спальных мест
+                </p>
+              </div>
+              <div
+                class="flex items-center gap-[12px] pl-[30px] pt-[8px] pb-[7px]"
+              >
+                <img
+                  class="w-[23px] h-[17px] relative"
+                  src="./assets/icons/nastolniy.svg"
+                  alt=""
+                />
+                <p class="font-[Semibold] text-[16px] text-[#727488]">
+                  Настольный теннис
+                </p>
+              </div>
+              <div class="flex items-center gap-[12px] pl-[30px]">
+                <img
+                  class="w-[23px] h-[17px]"
+                  src="./assets/icons/banya.svg"
+                  alt=""
+                />
+                <p class="font-[Semibold] text-[16px] text-[#727488]">Баня</p>
+              </div>
+              <div class="flex items-center gap-[12px] pl-[30px] pt-[8px]">
+                <img
+                  class="w-[23px] h-[17px]"
+                  src="./assets/icons/basseyn.svg"
+                  alt=""
+                />
+                <p class="font-[Semibold] text-[16px] text-[#727488]">
+                  Бассейн
+                </p>
+              </div>
+              <div class="pl-[30px] flex items-center gap-[66px] mt-[27px]">
+                <h4 class="font-[Extrabold] text-[22px] text-[#333333]">
+                  от 8500 ₽ / сутки
+                </h4>
+                <div class="">
+                  <span class="font-[Semibold] text-[16px] text-[#F4683F]"
+                    >Подробнее</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[440px] h-[600px] bg-white border-2 rounded-[25px] relative"
+            >
+              <div
+                class="w-[92px] h-[36px] bg-white rounded-full flex items-center absolute top-[24px] right-[20px]"
+              >
+                <img
+                  class="pl-[16.33px] pr-[9.33px]"
+                  src="./assets/icons/do-30.svg"
+                  alt=""
+                />
+                <p class="font-[Semibold] text-[14px] text-[#727488]">до 8</p>
+              </div>
+              <div
+                class="w-[50px] flex items-center justify-center h-[50px] absolute right-[20px] top-[228px] backdrop-contrast-125 bg-white/50 rounded-full"
+              >
+                <img class="" src="./assets/icons/like2.svg" alt="" />
+              </div>
+              <img src="./assets/images/novaya5.svg" alt="" />
+              <h3
+                class="pt-[30px] pb-[16px] pl-[30px] font-[Extrabold] text-[24px]"
+              >
+                Новая сосновка
+              </h3>
+              <div class="flex items-center gap-[12px] pl-[30px]">
+                <img
+                  class="w-[23px] h-[17px]"
+                  src="./assets/icons/spalnix-mect.svg"
+                  alt=""
+                />
+                <p class="font-[Semibold] text-[16px] text-[#727488]">
+                  5 спальных мест
+                </p>
+              </div>
+              <div
+                class="flex items-center gap-[12px] pl-[30px] pt-[8px] pb-[7px]"
+              >
+                <img
+                  class="w-[23px] h-[17px] relative"
+                  src="./assets/icons/nastolniy.svg"
+                  alt=""
+                />
+                <p class="font-[Semibold] text-[16px] text-[#727488]">
+                  Настольный теннис
+                </p>
+              </div>
+              <div class="flex items-center gap-[12px] pl-[30px]">
+                <img
+                  class="w-[23px] h-[17px]"
+                  src="./assets/icons/banya.svg"
+                  alt=""
+                />
+                <p class="font-[Semibold] text-[16px] text-[#727488]">Баня</p>
+              </div>
+              <div class="flex items-center gap-[12px] pl-[30px] pt-[8px]">
+                <img
+                  class="w-[23px] h-[17px]"
+                  src="./assets/icons/basseyn.svg"
+                  alt=""
+                />
+                <p class="font-[Semibold] text-[16px] text-[#727488]">
+                  Бассейн
+                </p>
+              </div>
+              <div class="pl-[30px] flex items-center gap-[66px] mt-[27px]">
+                <h4 class="font-[Extrabold] text-[22px] text-[#333333]">
+                  от 4000 ₽ / сутки
+                </h4>
+                <div class="">
+                  <span class="font-[Semibold] text-[16px] text-[#F4683F]"
+                    >Подробнее</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full flex items-center justify-center">
+            <button
+              class="w-[280px] h-[50px] font-[Semibold] text-[18px] text-[#FFF] bg-[#F4683F] rounded-full mx-auto my-[80px] text-center"
+            >
+              Перейти в каталог
+            </button>
+          </div>
+        </div>
+      </section>
+      <section
+        class="bg-[url('assets/images/4-section.svg')] h-[1041px] bg-no-repeat bg-right"
+      >
+        <div class="max-w-[1440px] mx-auto px-5">
+          <h5 class="font-[Extrabold] text-[40px] text-[#333333] mt-[120px]">
+            Можем организовать для Вас
+          </h5>
+          <div class="flex flex-wrap gap-[40px]">
+            <div
+              class="w-[440px] h-[130px] shadow rounded-[20px] flex items-center gap-[22px] pl-[44px] mt-[80px]"
+            >
+              <img src="./assets/icons/keytering.svg" alt="" />
+              <p class="font-[Semibold] text-[18px] text-[#333333]">
+                Кейтеринг
+              </p>
+            </div>
+            <div
+              class="w-[440px] h-[130px] shadow rounded-[20px] flex items-center gap-[22px] pl-[44px] mt-[80px]"
+            >
+              <img src="./assets/icons/povar.svg" alt="" />
+              <p class="font-[Semibold] text-[18px] text-[#333333]">
+                Выездной повар
+              </p>
+            </div>
+            <div
+              class="w-[440px] h-[130px] shadow rounded-[20px] flex items-center gap-[22px] pl-[44px] mt-[80px]"
+            >
+              <img src="./assets/icons/furshet.svg" alt="" />
+              <p class="font-[Semibold] text-[18px] text-[#333333]">Фуршет</p>
+            </div>
+            <div
+              class="w-[440px] h-[130px] shadow rounded-[20px] flex items-center gap-[22px] pl-[44px] mt-[80px]"
+            >
+              <img src="./assets/icons/programma.svg" alt="" />
+              <p class="font-[Semibold] text-[18px] text-[#333333]">
+                Шоу программа
+              </p>
+            </div>
+            <div
+              class="w-[440px] h-[130px] shadow rounded-[20px] flex items-center gap-[22px] pl-[44px] mt-[80px]"
+            >
+              <img src="./assets/icons/transfer.svg" alt="" />
+              <p class="font-[Semibold] text-[18px] text-[#333333]">Трансфер</p>
+            </div>
+            <div
+              class="w-[440px] h-[130px] shadow rounded-[20px] flex items-center gap-[22px] pl-[44px] mt-[80px]"
+            >
+              <img src="./assets/icons/klyuch.svg" alt="" />
+              <p class="font-[Semibold] text-[18px] text-[#333333]">
+                Мероприятия под ключ
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center justify-center mt-[60px]">
+            <button
+              class="w-[280px] h-[50px] bg-[#F4683F] rounded-full text-white"
+            >
+              Узнать подробнее
+            </button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="max-w-[1440px] mx-auto px-5">
+          <div class="h-[936px]">
+            <h2 class="font-[Extrabold] text-[40px] text-[#333333] mb-[80px]">
+              Частые вопросы
+            </h2>
+            <div
+              class="flex items-center justify-between border-t pt-[28px] pb-[29px]"
+            >
+              <h6 class="font-[Extrabold] text-[22px] text-[#333333]">
+                Как происходит бронирование?
+              </h6>
+              <img class="mr-[17px]" src="./assets/icons/plus.svg" alt="" />
+            </div>
+            <div
+              class="second-div flex items-center justify-between border-t pt-[28px] pb-[29px]"
+            >
+              <div class="flex flex-col">
+                <h6 class="font-[Extrabold] text-[22px] text-[#333333]">
+                  Какая сумма предоплаты нужна?
+                </h6>
+                <p class="second-div-p hidden">
+                  Стандарт предоплаты 50% от суммы аренды, если сумма аренды
+                  большая, то можно уменьшить предоплату до 30%.
+                </p>
+              </div>
+              <img class="mr-[17px]" src="./assets/icons/minus.svg" alt="" />
+            </div>
+            <div
+              class="flex items-center justify-between border-t pt-[28px] pb-[29px]"
+            >
+              <h6 class="font-[Extrabold] text-[22px] text-[#333333]">
+                Можно ли разбить предоплату на несколько частей?
+              </h6>
+              <img class="mr-[17px]" src="./assets/icons/plus.svg" alt="" />
+            </div>
+            <div
+              class="flex items-center justify-between border-t pt-[28px] pb-[29px]"
+            >
+              <h6 class="font-[Extrabold] text-[22px] text-[#333333]">
+                Как работаете с юр. лицами?
+              </h6>
+              <div
+                class="w-[50px] h-[50px] bg-[#EEEEEE] rounded-full flex items-center justify-center relative"
+              >
+                <img class="" src="./assets/icons/plus.svg" alt="" />
+              </div>
+              <img
+                class="absolute left-[1625px] top-[2px] z-10"
+                src="./assets/icons/finger.svg"
+                alt=""
+              />
+            </div>
+            <div
+              class="flex items-center justify-between border-t pt-[28px] pb-[29px]"
+            >
+              <h6 class="font-[Extrabold] text-[22px] text-[#333333]">
+                Можно ли приехать на просмотр?
+              </h6>
+              <img class="mr-[17px]" src="./assets/icons/plus.svg" alt="" />
+            </div>
+            <div
+              class="flex items-center justify-between border-t pt-[28px] pb-[29px]"
+            >
+              <h6 class="font-[Extrabold] text-[22px] text-[#333333]">
+                Какое время заезда и выезда в дом и есть ли возможность сдвинуть
+                заезд или выезд?
+              </h6>
+              <img class="mr-[17px]" src="./assets/icons/plus.svg" alt="" />
+            </div>
+            <div
+              class="flex items-center justify-between border-t pt-[28px] pb-[29px]"
+            >
+              <h6 class="font-[Extrabold] text-[22px] text-[#333333]">
+                Зачем нужен залог?
+              </h6>
+              <img class="mr-[17px]" src="./assets/icons/plus.svg" alt="" />
+            </div>
+            <div
+              class="flex items-center justify-between border-t pt-[28px] pb-[29px]"
+            >
+              <h6 class="font-[Extrabold] text-[22px] text-[#333333]">
+                Сколько стоят Ваши услуги?
+              </h6>
+              <img class="mr-[17px]" src="./assets/icons/plus.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="last-section bg-[url('assets/images/dom.jpg')] h-[775px] bg-no-repeat"
+      >
+        <div class="max-w-[1440px] mx-auto px-5">
+          <div class="pt-[233px]">
+            <div class="ml-[120px]">
+              <h2 class="font-[Extrabold] text-[40px] text-[#FFFFFF]">
+                Хотите сдать дом?
+              </h2>
+              <p
+                class="font-[Semibold] text-[18px] text-[#FFFFFF] w-[373px] mt-5 my-[60px]"
+              >
+                Оставьте заявку и мы свяжемся с вами для уточнения деталей
+              </p>
+              <button
+                class="w-[260px] h-[50px] bg-[#F4683F] text-[#FFFFFF] rounded-full font-[Semibold] text-[18px]"
+              >
+                Оставить заявку
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="h-[350px]">
+      <div class="max-w-[1440px] mx-auto px-5 flex items-center">
+        <div>
+          <img
+            class="pt-[78px] pb-[119px]"
+            src="./assets/icons/logo.svg"
+            alt=""
+          />
+          <p class="font-[Medium] text-[14px] text-[#404256]">
+            Политика конфиденциальности
+          </p>
+          <p class="pt-[4px] font-[Medium] text-[14px] text-[#404256]">
+            Согласие на обработку персональных данных
+          </p>
+        </div>
+        <div class="flex items-center justify-between ml-[100px]">
+          <ul class="mr-[92px] pt-[82px]">
+            <li class="flex flex-col gap-[12px]">
+              <h2 class="font-[Extrabold] text-[22px] text-[#FFFFFF] pt-[5px]">
+                Каталог
+              </h2>
+              <a class="font-[Semibold] text-[16px] text-[#C0C2D7]" href=""
+                >С бассейном</a
+              >
+              <a class="font-[Semibold] text-[16px] text-[#C0C2D7]" href=""
+                >Семейные и уютные</a
+              >
+              <a class="font-[Semibold] text-[16px] text-[#C0C2D7]" href=""
+                >Хиты продаж</a
+              >
+              <a class="font-[Semibold] text-[16px] text-[#C0C2D7]" href=""
+                >Под свадьбы и корпоративы</a
+              >
+              <a class="font-[Semibold] text-[16px] text-[#C0C2D7]" href=""
+                >С русской баней на дровах</a
+              >
+            </li>
+          </ul>
+          <ul class="mr-[266px] pb-[90px]">
+            <li>
+              <a class="font-[Semibold] text-[16px] text-[#C0C2D7]" href=""
+                >Сотрудничество</a
+              >
+            </li>
+            <li>
+              <a class="font-[Semibold] text-[16px] text-[#C0C2D7]" href=""
+                >Частые вопросы</a
+              >
+            </li>
+          </ul>
+          <ul class="pt-[90px]">
+            <li class="flex items-center justify-center gap-[7px] pb-[143px]">
+              <div>
+                <img src="./assets/icons/footer-phone.svg" alt="" />
+              </div>
+              <div>
+                <p class="font-[Semibold] text-[16px] text-[#C0C2D7]">
+                  <a href="tel:8 (843) 528-65-48">8 (843) 528-65-48</a>
+                </p>
+              </div>
+            </li>
+            <li class="flex items-center justify-center gap-[23px]">
+              <div><img src="./assets/icons/f-youtube.svg" alt="" /></div>
+              <div><img src="./assets/icons/f-instagram.svg" alt="" /></div>
+              <div><img src="./assets/icons/f-vk.svg" alt="" /></div>
+              <div><img src="./assets/icons/f-whatsapp.svg" alt="" /></div>
+              <div><img src="./assets/icons/f-telegram.svg" alt="" /></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
