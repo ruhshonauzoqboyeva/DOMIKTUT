@@ -8,6 +8,8 @@ body{
 }
 .second-div:hover .second-div-p{
     display: block;
+    margin-top: 17px;
+    margin-bottom: 21px;
 }
 
 footer{
